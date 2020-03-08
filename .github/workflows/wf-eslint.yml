@@ -16,7 +16,6 @@ jobs:
     # - name: configure
     #   run: ./configure
     - name: npm install, build
-    run: |
-      make install
+      run: make install
     - name: ESLint
       run: make lint
