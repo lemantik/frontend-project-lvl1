@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import greetUserByName from '../src/index.js';
+import {
+  askNameAndGreet,
+} from '../src/index.js';
 
-console.log('Welcome to the Brain Games!');
-greetUserByName();
+askNameAndGreet(); // don't forget to get userName

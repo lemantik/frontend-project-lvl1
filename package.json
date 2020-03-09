@@ -1,11 +1,12 @@
 {
   "name": "al-frontend-project-lvl1",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "1st FrontEnd project on hexlet.io",
   "main": "src/index.js",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
