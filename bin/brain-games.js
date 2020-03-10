@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import {
-  askNameAndGreet,
-} from '../src/index.js';
+import brainGames from '../src/games/brain-games-engine.js';
 
-askNameAndGreet(); // don't forget to get userName
+brainGames();

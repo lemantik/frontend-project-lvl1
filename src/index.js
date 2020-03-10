@@ -29,3 +29,4 @@ const runGame = (gameObj) => {
 };
 
 export default runGame;
+export { askUserName };
