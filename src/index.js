@@ -1,22 +1,31 @@
 import readlineSync from 'readline-sync';
 
-const askUserName = () => readlineSync.question('May I have your name? ');
-const generalGreetings = () => console.log('Welcome to the Brain Games!');
+const WINS_NUMBER = 3;
 
-const askNameAndGreet = () => {
-  generalGreetings();
+const askUserName = () => readlineSync.question('May I have your name? ');
+
+const runGame = (gameObj) => {
+  console.log('Welcome to the Brain Games!');
   const userName = askUserName();
   console.log(`Hello ${userName}!`);
-  return userName;
+  console.log(gameObj.ruleDescription);
+
+  for (let numRightAnswers = 0; numRightAnswers < WINS_NUMBER; numRightAnswers += 1) {
+    const question = gameObj.getQuestion();
+    const rightAnswer = gameObj.getRightAnswer(question);
+    // Ask
+    console.log(`Question: ${question}`);
+    const usersAnswer = readlineSync.question('Your answer: ');
+
+    if (usersAnswer === rightAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`"${usersAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
+  }
+  console.log(`Congratulations, ${userName}!`);
 };
 
-const getRandomNumber = (max) => Math.floor(Math.random() * max) + 1;
-
-const isEven = (num) => num % 2 === 0;
-
-export default askUserName;
-export {
-  askNameAndGreet,
-  getRandomNumber,
-  isEven,
-};
+export default runGame;
