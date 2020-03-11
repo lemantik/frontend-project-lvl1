@@ -1,13 +1,10 @@
-import runGame from '../index.js';
-
-const MAX_RANDOM = 100;
+import runGame, { getRandomNumber } from '../index.js';
 
 const isEven = (num) => num % 2 === 0;
-const getRandomNumber = (max) => Math.floor(Math.random() * max) + 1;
 class GameObj {
   constructor() {
     this.ruleDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
-    this.getQuestion = () => getRandomNumber(MAX_RANDOM);
+    this.getQuestion = () => getRandomNumber();
     this.getRightAnswer = (question) => (isEven(question) ? 'yes' : 'no');
   }
 }
