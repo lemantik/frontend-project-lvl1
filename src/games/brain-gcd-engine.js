@@ -13,7 +13,7 @@ class GameObj {
     const num1 = getRandomNumber();
     const num2 = getRandomNumber();
     this.question = `${num1} ${num2}`;
-    this.answer = getGCD(num1, num2).toString();
+    this.answer = getGCD(num1, num2);
     return this.question;
   }
 

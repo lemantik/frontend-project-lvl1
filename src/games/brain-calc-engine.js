@@ -18,7 +18,7 @@ class GameObj {
     const num2 = getRandomNumber();
     const operandID = getRandomNumber(Object.keys(operands).length);
     this.question = `${num1} ${operands[operandID].sign} ${num2}`;
-    this.answer = operands[operandID].math(num1, num2).toString();
+    this.answer = operands[operandID].math(num1, num2);
     return this.question;
   }
 

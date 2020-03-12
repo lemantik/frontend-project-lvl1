@@ -14,7 +14,7 @@ const runGame = (gameObj) => {
 
   for (let numRightAnswers = 0; numRightAnswers < WINS_NUMBER; numRightAnswers += 1) {
     const question = gameObj.getQuestion();
-    const rightAnswer = gameObj.getRightAnswer(question);
+    const rightAnswer = gameObj.getRightAnswer(question).toString();
     // Ask
     console.log(`Question: ${question}`);
     const usersAnswer = readlineSync.question('Your answer: ');
