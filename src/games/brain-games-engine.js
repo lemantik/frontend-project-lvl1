@@ -3,7 +3,7 @@ import runGame from '../index.js';
 class GameObj {
   constructor() {
     this.ruleDescription = '';
-    this.getQuestion = () => null;// () => getRandomNumber(MAX_RANDOM);
+    this.getQuestion = () => null;
     this.getRightAnswer = () => null;
   }
 }
