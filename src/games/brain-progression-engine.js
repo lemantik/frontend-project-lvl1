@@ -1,5 +1,8 @@
 import runGame, { getRandomNumber } from '../index.js';
 
+const PROGRESSION_LENGTH = 10;
+const INCREMENT_SIZE_RANGE = 10;
+const INITIAL_NUMBER_RANGE = 10;
 
 class GameObj {
   constructor() {
@@ -9,13 +12,13 @@ class GameObj {
   }
 
   getQuestion() {
-    const num1 = getRandomNumber(10);
-    const step = getRandomNumber(10);
-    const holeId = getRandomNumber(10) - 1;
+    const initNum = getRandomNumber(INITIAL_NUMBER_RANGE);
+    const step = getRandomNumber(INCREMENT_SIZE_RANGE);
+    const holeId = getRandomNumber(PROGRESSION_LENGTH) - 1;
 
     const progression = [];
-    for (let i = 0; i < 10; i += 1) {
-      progression.push(num1 + step * i);
+    for (let i = 0; i < PROGRESSION_LENGTH; i += 1) {
+      progression.push(initNum + step * i);
     }
 
     [this.answer, progression[holeId]] = [progression[holeId], '..'];

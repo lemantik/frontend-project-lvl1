@@ -12,7 +12,7 @@ const runGame = (gameObj) => {
   console.log(`Hello ${userName}!`);
   console.log(gameObj.ruleDescription);
 
-  for (let numRightAnswers = 0; numRightAnswers < WINS_NUMBER; numRightAnswers += 1) {
+  for (let countRightAnswers = 0; countRightAnswers < WINS_NUMBER; countRightAnswers += 1) {
     const question = gameObj.getQuestion();
     const rightAnswer = gameObj.getRightAnswer(question).toString();
     // Ask
