@@ -1,11 +1,11 @@
 import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const operands = {
-  1: { sign: '+', math: ((a, b) => a + b) },
-  2: { sign: '-', math: ((a, b) => a - b) },
-  3: { sign: '*', math: ((a, b) => a * b) },
-};
+const operands = [
+  { sign: '+', math: ((a, b) => a + b) },
+  { sign: '-', math: ((a, b) => a - b) },
+  { sign: '*', math: ((a, b) => a * b) },
+];
 
 class GameObj {
   constructor() {
@@ -17,7 +17,7 @@ class GameObj {
   getQuestion() {
     const num1 = getRandomNumber();
     const num2 = getRandomNumber();
-    const operandID = getRandomNumber(Object.keys(operands).length);
+    const operandID = getRandomNumber(0, operands.length);
     this.question = `${num1} ${operands[operandID].sign} ${num2}`;
     this.answer = operands[operandID].math(num1, num2);
     return this.question;
