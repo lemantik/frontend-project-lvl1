@@ -1,6 +1,6 @@
 {
   "name": "al-frontend-project-lvl1",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "description": "1st FrontEnd project on hexlet.io",
   "main": "src/index.js",
   "type": "module",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.1"
   }
 }
