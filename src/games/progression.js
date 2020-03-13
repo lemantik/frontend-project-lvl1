@@ -1,4 +1,5 @@
-import runGame, { getRandomNumber } from '../index.js';
+import runGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const PROGRESSION_LENGTH = 10;
 const INCREMENT_SIZE_RANGE = 10;

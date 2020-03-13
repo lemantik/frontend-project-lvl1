@@ -1,4 +1,5 @@
-import runGame, { getRandomNumber } from '../index.js';
+import runGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const getGCD = (a, b) => (a !== 0 ? getGCD(b % a, a) : b);
 
