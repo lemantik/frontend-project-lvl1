@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import brainGames from '../src/games/prime.js';
+import { RULE_DESCRIPTION, getQuestion } from '../src/games/prime.js';
+import runGame from '../src/index.js';
 
-brainGames();
+runGame(getQuestion, RULE_DESCRIPTION);
