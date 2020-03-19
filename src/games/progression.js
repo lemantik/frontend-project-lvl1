@@ -1,6 +1,6 @@
 import getRandomNumber from '../utils.js';
 
-const getQuestion = () => {
+const getPairQuestionAnswer = () => {
   const PROGRESSION_LENGTH = 10;
   const INCREMENT_SIZE_RANGE = 10;
   const INITIAL_NUMBER_RANGE = 10;
@@ -22,13 +22,13 @@ const getQuestion = () => {
 
   return [
     question,
-    answer,
+    answer.toString(),
   ];
 };
 
 export default () => (
   {
-    fn: getQuestion,
+    fn: getPairQuestionAnswer,
     ruleDescription: 'What number is missing in the progression?',
   }
 );

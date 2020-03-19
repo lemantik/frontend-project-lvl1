@@ -1,11 +1,11 @@
 import getRandomNumber from '../utils.js';
 
-const getQuestion = () => {
+const getPairQuestionAnswer = () => {
   const isPrime = (num) => {
     if (num < 2) {
       return false;
     }
-    for (let i = 2; i < num; i += 1) {
+    for (let i = 2; i < num / 2; i += 1) {
       if (num % i === 0) {
         return false;
       }
@@ -13,16 +13,16 @@ const getQuestion = () => {
     return true;
   };
 
-  const number = getRandomNumber();
+  const questionNumber = getRandomNumber();
   return [
-    number,
-    isPrime(number) ? 'yes' : 'no',
+    questionNumber,
+    isPrime(questionNumber) ? 'yes' : 'no',
   ];
 };
 
 export default () => (
   {
-    fn: getQuestion,
+    fn: getPairQuestionAnswer,
     ruleDescription: 'Answer "yes" if given number is prime. Otherwise answer "no".',
   }
 );

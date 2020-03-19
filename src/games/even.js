@@ -1,17 +1,17 @@
 import getRandomNumber from '../utils.js';
 
-const getQuestion = () => {
+const getPairQuestionAnswer = () => {
   const isEven = (num) => num % 2 === 0;
-  const number = getRandomNumber();
+  const questionNumber = getRandomNumber();
   return [
-    number,
-    isEven(number) ? 'yes' : 'no',
+    questionNumber,
+    isEven(questionNumber) ? 'yes' : 'no',
   ];
 };
 
 export default () => (
   {
-    fn: getQuestion,
+    fn: getPairQuestionAnswer,
     ruleDescription: 'Answer "yes" if the number is even, otherwise answer "no".',
   }
 );
