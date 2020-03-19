@@ -14,6 +14,9 @@ const getQuestion = () => {
   return [question, answer];
 };
 
-const RULE_DESCRIPTION = 'What is the result of the expression?';
-
-export { RULE_DESCRIPTION, getQuestion };
+export default () => (
+  {
+    fn: getQuestion,
+    ruleDescription: 'What is the result of the expression?',
+  }
+);

@@ -7,7 +7,7 @@ const getQuestion = () => {
   let answer;
 
   const initNum = getRandomNumber(0, INITIAL_NUMBER_RANGE);
-  const step = getRandomNumber(0, INCREMENT_SIZE_RANGE);
+  const step = getRandomNumber(1, INCREMENT_SIZE_RANGE);
   const holeId = getRandomNumber(0, PROGRESSION_LENGTH - 1);
 
   // Create progression
@@ -26,6 +26,9 @@ const getQuestion = () => {
   ];
 };
 
-const RULE_DESCRIPTION = 'What number is missing in the progression?';
-
-export { RULE_DESCRIPTION, getQuestion };
+export default () => (
+  {
+    fn: getQuestion,
+    ruleDescription: 'What number is missing in the progression?',
+  }
+);

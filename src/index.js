@@ -2,7 +2,8 @@ import readlineSync from 'readline-sync';
 
 const WINS_NUMBER = 3;
 
-const runGame = (function2getQuestion, ruleDescription) => {
+const runGame = (gameObj) => {
+  const { fn: function2getQuestion, ruleDescription } = gameObj;
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
