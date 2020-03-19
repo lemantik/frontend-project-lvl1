@@ -3,6 +3,18 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1e5e3f8ff7f1b0cbbddb/maintainability)](https://codeclimate.com/github/lemantik/frontend-project-lvl1/maintainability)
 
+- [Hexlet: Frontend - project level 1](#hexlet-frontend---project-level-1)
+  - [Overview](#overview)
+      - [Общие правила для всех игр:](#%d0%9e%d0%b1%d1%89%d0%b8%d0%b5-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb%d0%b0-%d0%b4%d0%bb%d1%8f-%d0%b2%d1%81%d0%b5%d1%85-%d0%b8%d0%b3%d1%80)
+  - [Install](#install)
+      - [Локальная установка](#%d0%9b%d0%be%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0)
+      - [Глобальная установка](#%d0%93%d0%bb%d0%be%d0%b1%d0%b0%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0)
+  - [Brain-even](#brain-even)
+  - [Brain-calc](#brain-calc)
+  - [Brain-GCD](#brain-gcd)
+  - [Brain-progression](#brain-progression)
+  - [Brain-prime](#brain-prime)
+
 ## Overview
 Набор игр-головоломок состоящий из 5 простых игр:
 1. brain-even
@@ -22,8 +34,6 @@
 - node.js (v.13 и выше)
 - npm - менеджер пакетов
 - make (желательно, для удобства установки)
-
-### Команды для установки:
 
 #### Локальная установка
 ```bash
