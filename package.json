@@ -1,6 +1,6 @@
 {
   "name": "al-frontend-project-lvl1",
-  "version": "1.7.8",
+  "version": "1.7.9",
   "description": "1st FrontEnd project on hexlet.io",
   "main": "src/index.js",
   "type": "module",
