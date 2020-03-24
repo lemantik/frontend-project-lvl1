@@ -9,9 +9,7 @@ const getPairQuestionAnswer = () => {
   ];
 };
 
-export default () => (
-  {
-    fn: getPairQuestionAnswer,
-    ruleDescription: 'Answer "yes" if the number is even, otherwise answer "no".',
-  }
-);
+export default {
+  fn: getPairQuestionAnswer,
+  ruleDescription: 'Answer "yes" if the number is even, otherwise answer "no".',
+};

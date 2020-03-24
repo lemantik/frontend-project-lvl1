@@ -2,4 +2,4 @@
 import progressionGame from '../src/games/progression.js';
 import runGame from '../src/index.js';
 
-runGame(progressionGame());
+runGame(progressionGame);

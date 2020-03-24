@@ -18,9 +18,7 @@ const getPairQuestionAnswer = () => {
   ];
 };
 
-export default () => (
-  {
-    fn: getPairQuestionAnswer,
-    ruleDescription: 'What is the result of the expression?',
-  }
-);
+export default {
+  fn: getPairQuestionAnswer,
+  ruleDescription: 'What is the result of the expression?',
+};

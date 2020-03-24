@@ -12,9 +12,7 @@ const getPairQuestionAnswer = () => {
   ];
 };
 
-export default () => (
-  {
-    fn: getPairQuestionAnswer,
-    ruleDescription: 'Find the greatest common divisor of given numbers.',
-  }
-);
+export default {
+  fn: getPairQuestionAnswer,
+  ruleDescription: 'Find the greatest common divisor of given numbers.',
+};

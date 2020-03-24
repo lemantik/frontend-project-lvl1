@@ -26,9 +26,7 @@ const getPairQuestionAnswer = () => {
   ];
 };
 
-export default () => (
-  {
-    fn: getPairQuestionAnswer,
-    ruleDescription: 'What number is missing in the progression?',
-  }
-);
+export default {
+  fn: getPairQuestionAnswer,
+  ruleDescription: 'What number is missing in the progression?',
+};
