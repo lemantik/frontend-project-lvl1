@@ -1,6 +1,6 @@
 import getRandomNumber from '../utils.js';
 
-const getPairQuestionAnswer = () => {
+const getLap = () => {
   const getGCD = (a, b) => (a !== 0 ? getGCD(b % a, a) : b);
   const num1 = getRandomNumber(1);
   const num2 = getRandomNumber(1);
@@ -13,6 +13,6 @@ const getPairQuestionAnswer = () => {
 };
 
 export default {
-  fn: getPairQuestionAnswer,
-  ruleDescription: 'Find the greatest common divisor of given numbers.',
+  getLap,
+  rule: 'Find the greatest common divisor of given numbers.',
 };

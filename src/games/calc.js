@@ -6,7 +6,7 @@ const operands = [
   { sign: '*', math: ((a, b) => a * b) },
 ];
 
-const getPairQuestionAnswer = () => {
+const getLap = () => {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const operandID = getRandomNumber(0, operands.length - 1);
@@ -19,6 +19,6 @@ const getPairQuestionAnswer = () => {
 };
 
 export default {
-  fn: getPairQuestionAnswer,
-  ruleDescription: 'What is the result of the expression?',
+  getLap,
+  rule: 'What is the result of the expression?',
 };

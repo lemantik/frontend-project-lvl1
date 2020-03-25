@@ -1,15 +1,15 @@
 import getRandomNumber from '../utils.js';
 
-const getPairQuestionAnswer = () => {
-  const isEven = (num) => num % 2 === 0;
-  const questionNumber = getRandomNumber();
+const isEven = (num) => num % 2 === 0;
+const getLap = () => {
+  const question = getRandomNumber();
   return [
-    questionNumber,
-    isEven(questionNumber) ? 'yes' : 'no',
+    question,
+    isEven(question) ? 'yes' : 'no',
   ];
 };
 
 export default {
-  fn: getPairQuestionAnswer,
-  ruleDescription: 'Answer "yes" if the number is even, otherwise answer "no".',
+  getLap,
+  rule: 'Answer "yes" if the number is even, otherwise answer "no".',
 };
