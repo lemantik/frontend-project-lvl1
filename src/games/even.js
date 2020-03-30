@@ -1,11 +1,13 @@
 import getRandomNumber from '../utils.js';
 
 const isEven = (num) => num % 2 === 0;
+
 const getLap = () => {
   const question = getRandomNumber();
+  const answer = isEven(question) ? 'yes' : 'no';
   return [
     question,
-    isEven(question) ? 'yes' : 'no',
+    answer,
   ];
 };
 

@@ -4,7 +4,7 @@ const getLap = () => {
   const PROGRESSION_LENGTH = 10;
   const INCREMENT_SIZE_RANGE = 10;
   const INITIAL_NUMBER_RANGE = 10;
-  let answer;
+  // let answer;
 
   const initNum = getRandomNumber(0, INITIAL_NUMBER_RANGE);
   const step = getRandomNumber(1, INCREMENT_SIZE_RANGE);
@@ -16,7 +16,9 @@ const getLap = () => {
     progression.push(initNum + step * i);
   }
   // swap elements
-  [answer, progression[holeId]] = [progression[holeId], '..'];
+  const answer = progression[holeId];
+  progression[holeId] = '..';
+  // [answer, progression[holeId]] = [progression[holeId], '..'];
 
   const question = progression.join(' ');
 

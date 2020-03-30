@@ -9,7 +9,7 @@ const runGame = (game) => {
   console.log(`Hello ${userName}!`);
   console.log(rule);
 
-  for (let countRightAnswers = 0; countRightAnswers < WINS_COUNT; countRightAnswers += 1) {
+  for (let i = 0; i < WINS_COUNT; i += 1) {
     const [question, rightAnswer] = getLap();
     // Ask
     console.log(`Question: ${question}`);
